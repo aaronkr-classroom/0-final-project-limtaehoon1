@@ -43,7 +43,7 @@ span.ut-red {
 }
 
 #index {
-  background: url(https://cdn.pixabay.com/photo/2019/10/04/12/05/train-4525444_960_720.jpg)
+  background: url(https://img.khan.co.kr/news/2022/07/13/l_2022071401001036200086541.jpg)
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,7 +58,7 @@ span.ut-red {
 }
 
 header {
-  background-color: white;
+  background-color: rgb(159, 231, 237);
   border-bottom: 1px solid lightgray;
 }
 
@@ -101,7 +101,7 @@ nav .menu-item,
   float: left;
   line-height: 1;
   cursor: pointer; /* Aaron */
-  color: #ab3135;
+  color: #080808;
 }
 
 .menu-item:focus,
@@ -206,6 +206,21 @@ td {
 
 .user-edit-form tbody {
   position: relative;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+     /* 이미지를 비율에 맞게 잘라줍니다. */
+}
+.btn-outline-secondary {
+  color: #fff; /* 글자 색깔 흰색 */
+  background-color: #000; /* 배경 색깔 검정 */
+  border-color: #000; /* 테두리 색깔 검정 */
+}
+
+.btn-outline-secondary:hover {
+  color: #000; /* 호버 시 글자 색깔 검정 */
+  background-color: #fff; /* 호버 시 배경 색깔 흰색 */
 }
 
 /* .user-edit-form .profileImg-row {

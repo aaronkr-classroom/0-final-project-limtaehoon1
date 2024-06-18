@@ -1,0 +1,95 @@
+<!-- views/users/new.ejs -->
+
+<!--
+  Listing 19.1 (p. 277)
+  사용자 생성 구축
+-->
+
+<main class="">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="pt-5">
+        <h1>Add New Sports team</h1>
+        <p>Ready to join us? We're happy to have you.</p>
+  
+        <div class="row">
+          <div class="col-lg-6 mb-3 mt-3">
+            <div class="data-form">
+              <form action="/sports/create" method="POST">
+                <!-- 사용자 계정을 생성하기 위한 폼을 생성한다 -->
+                <div class="form-group">
+                  <label for="name">스포츠 팀 이름</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                  />
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">이메일</label
+                  ><!-- email과 password 필드의 보호를 위한 HTML 속성 적용 -->
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                  />
+                </div><div class="form-group">
+                    <label for="phoneNumber">전화번호</label
+                    ><!-- email과 password 필드의 보호를 위한 HTML 속성 적용 -->
+                    <input
+                      type="phoneNumber"
+                      name="phoneNumber"
+                      id="phoneNumber"
+                      class="form-control"
+                    />
+                  </div>
+                <div class="form-group">
+                  <label for="password">비밀번호</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password2">비밀번호 확인</label>
+                  <input
+                    type="password"
+                    name="password2"
+                    id="password2"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="profileImg">사용자 이미지 링크</label>
+                  <input
+                    type="text"
+                    name="profileImg"
+                    id="profileImg"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-lg ut-red">
+                    Add sports
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 text-center text-lg-start mb-3 mt-5">
+            <figure>
+              <img
+                src="https://cdn.pixabay.com/photo/2014/10/14/20/24/football-488714_1280.jpg"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
